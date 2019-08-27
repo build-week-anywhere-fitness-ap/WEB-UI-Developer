@@ -13,13 +13,13 @@
 <body class="  d-flex flex-column min-vh-100 ">
 
     <!-- Navigation bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <a class="navbar-brand" href="#">Anywhere Fitness</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav text-center">
         <li class="nav-item">
           <a class="nav-link" href="#">How it Works</a>
         </li>
@@ -31,14 +31,47 @@
   </nav>
 
     <!-- Begin page content -->
-<main role="main" class="flex-grow-1   d-flex align-items-center justify-content-center">
 
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Fluid jumbotron</h1>
-      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-    </div>
-  </div>
+  <header class="">
+    <div class="jumbotron jumbotron-fluid ">
+      <div class="container text-center align-items-center px-5">
+        <h1 class="display-4">Fitness.</h1>
+      </div>
+      </div> <!-- jumbotron -->
+
+      <section class="mobileIntro text-center ">
+        <h3>Train Anywhere.</br>With Anyone.</br>Anytime.</h3>
+        <button class="btn  btn-dark d-block mx-auto">Log In</button>
+      </section>
+  </header>
+
+<main role="main" class=" d-flex flex-column align-items-center justify-content-center">
+
+  <section class="about container-fluid flex-column ">
+    <div class="row">
+      <img src="./img/inspired-horizons-digital-marketing-beach-yoga.jpg" alt="" class="img-fluid" loading="lazy">
+    </div><!-- end img div-->
+    <h3 class="text-center">Anywhere Fitness</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non facilis repellendus quia eius iusto repellat quas totam! Molestias ullam sapiente eum, fuga velit nulla voluptatum error quisquam facere pariatur autem optio praesentium quam aperiam dolores voluptatibus, repudiandae explicabo corrupti a. Optio aliquid sit provident voluptatibus ullam molestiae libero sapiente illum?</p>
+  </section>
+
+  <section class="clients container-fluid container-fluid flex-column">
+    <div class="row position-relative">
+      <!-- <img loading="lazy" src="img/annie-spratt-beach-running.png" alt="" class="img-fluid position-relative"> -->
+    </div><!-- end img div-->
+    <h3 class="text-center">Clients</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non facilis repellendus quia eius iusto repellat quas totam! Molestias ullam sapiente eum, fuga velit nulla voluptatum error quisquam facere pariatur autem optio praesentium quam aperiam dolores voluptatibus, repudiandae explicabo corrupti a. Optio aliquid sit provident voluptatibus ullam molestiae libero sapiente illum?</p>
+  </section>
+
+  <section class="trainers container-fluid container-fluid flex-column">
+    <h3>Trainters</h3>
+  </section>
+
+  <section class="reviews container-fluid container-fluid flex-column">
+
+    <h3>Clients</h3>
+  </section>
+
 </main>
 
 <footer class="footer mt-auto py-3">
