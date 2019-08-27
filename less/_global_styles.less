@@ -74,6 +74,36 @@ header.hero{
 
 
 /*****************************
+  Decorations
+******************************/
+#spacer( @w; @h; @t;  @l;){
+  width: @w;
+  height:  @h;
+  top: @t;
+  left: @l;
+}
+
+#bottomToRightTri(){
+  clip-path: polygon(0 50% , 0% 100%, 100% 100%);
+}
+
+#bottomToLeftTri(){
+  clip-path: polygon(100% 50%, 0% 100%, 100% 100%);
+}
+
+#topToRightTri(){
+  clip-path: polygon(100% 0, 0 0, 100% 50%);
+}
+
+#topToLeftTri(){
+  clip-path: polygon(100% 0, 0 0, 100% 50%);
+}
+
+#accentTri(){
+  clip-path: polygon(50% 0, 0 0, 50% 60%);
+}
+
+/*****************************
   Thumbnail backgrounds
 ******************************/
 .bg-happy_person(){

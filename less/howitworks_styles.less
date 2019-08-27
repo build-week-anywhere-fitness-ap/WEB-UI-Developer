@@ -39,4 +39,71 @@ header.hero{
       }
     }
   }
-}
+
+  .spacer{
+    position: absolute;
+    width: 100%;
+    height: 56px;
+    bottom: -56px; 
+    left: 0;
+    background-color: @softOrange;
+    
+    .rightTri{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: orangered;
+      opacity: 0.5;
+      #bottomToRightTri();
+    }
+
+    .leftTri{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: gold;
+      opacity: 0.5;
+      #bottomToLeftTri();
+    }
+  }
+} // end header.hero
+
+main{
+
+  h3{
+    color: @darkBlue;
+  }
+  section.forClients{
+    
+    div.row.blurb{
+
+      .imgWrap{
+        filter: drop-shadow(5px 5px rgba(0,0,0,0.3));
+        
+        .accentTriangle{
+          bottom: -35%;
+          left: 35%;
+          width: 100%;
+          height: 100%;;
+          background-color: @lightAqua;
+          opacity: 0.5;
+          #accentTri();
+          // clip-path: polygon(100% 100%, 100% 66%, 0 100%);
+          z-index: -1;
+        }
+
+        img{
+          width:100%;
+          height: auto;
+          clip-path: polygon(100% 0, 100% 66%, 0 100%, 0 0);
+        }
+      }
+    } // end imgWrap
+
+  }// end section.forClients
+
+}// end main
