@@ -20,6 +20,9 @@ footer {
   background-color: #FFB656;
   padding: 1rem;
 }
+footer div.d-flex {
+  max-width: 1200px;
+}
 footer nav ul {
   list-style: none;
 }
