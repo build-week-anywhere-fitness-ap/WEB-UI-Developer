@@ -1,3 +1,42 @@
 // out: ../css/howitworks_styles.css
 @import "./_variables.less";
 @import "./_global_styles.less";
+
+header.hero{
+
+  div.jumbotron.jumbotron-fluid{
+    background-image: url("../img/victor-freitas-fist-bump.jpg");
+    background-position-x: 60%;
+
+    div.d-flex{
+      margin: 0 1rem;
+      top: 65%;
+      width: 100%;
+      max-width: 420px;
+      color: #fff;
+      transition: all 1s;
+
+
+      p{
+        font-size: 1.25rem;
+      }
+
+      @media @mb_tablet_up{
+        top: 73%;
+        margin: 0 2rem;
+        p{
+          font-size: 1.75rem;
+        }
+      }
+
+      @media @mb_desktop_up{
+        margin: 0 3rem;
+        max-width: 500px;
+
+        p{
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
