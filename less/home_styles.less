@@ -18,7 +18,7 @@ header{
     transition: padding 1s;
 
     @media @mb_desktop_up{
-      padding: 540px 0 0 0;
+      padding: 500px 0 0 0;
     }
 
     div.container {
@@ -132,7 +132,37 @@ main{
         h3{ font-size: 55px;}
         }
      }
+  } // end div.row.position-relative
 
+  section.reviews{
+
+
+
+    /*****************************
+    Carousel
+    ******************************/
+    .carousel-inner{
+      background-color: @darkBlue;
+      height: 420px;
+    }
+    .carousel-item{
+      height: 100%;;
+
+      img{
+        clip-path: circle( 50% at 50% 50%);
+        width: 250px;
+        height: auto;
+        position: relative;
+        top: 0;
+        left:50%;
+        transform: translateX(-50%);
+      }
+
+      div.carousel-caption{
+        bottom: 0;
+        padding-bottom: 35px;
+      }
+    }// end .carousel-item
   }
 
 } /* end main */
