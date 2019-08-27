@@ -35,32 +35,20 @@ header.hero{
   }
 
   .spacer{
-    position: absolute;
-    width: 100%;
+    #spacer(@softOrange);    
     height: 56px;
     bottom: -56px; 
     left: 0;
-    background-color: @softOrange;
     
     .rightTri{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: orangered;
-      opacity: 0.5;
+      #rightTri(orangered);
+       opacity: 0.5;
       #bottomToRightTri();
     }
 
     .leftTri{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: gold;
-      opacity: 0.5;
+      #leftTri(gold);
+       opacity: 0.5;
       #bottomToLeftTri();
     }
   }

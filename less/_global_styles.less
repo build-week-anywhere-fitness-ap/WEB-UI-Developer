@@ -76,12 +76,6 @@ header.hero{
 /*****************************
   Decorations
 ******************************/
-#spacer( @w; @h; @t;  @l;){
-  width: @w;
-  height:  @h;
-  top: @t;
-  left: @l;
-}
 
 #bottomToRightTri(){
   clip-path: polygon(0 50% , 0% 100%, 100% 100%);
@@ -106,6 +100,33 @@ header.hero{
 #accentTri2(){
   clip-path: polygon(50% 0, 50% 60%, 100% 0);
 }
+
+ #spacer(@bgc){
+    position: absolute;
+    width: 100%;
+    background-color: @bgc;
+ }    
+
+#rightTri(@bgc){
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: @bgc;
+  #bottomToRightTri();
+}
+
+#leftTri(@bgc){
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: @bgc;
+  #bottomToLeftTri();
+}
+  
 
 /*****************************
   Thumbnail backgrounds
