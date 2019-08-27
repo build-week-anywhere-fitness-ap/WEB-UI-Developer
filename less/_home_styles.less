@@ -49,29 +49,84 @@ main{
   }
 
   section.about{
-
+    div.row.position-relative{
+      background-image: url("../img/inspired-horizons-digital-marketing-beach-yoga.jpg");
+    }
   }
 
-  
+  section.clients{
+    div.row.position-relative{
+      background-image: url("../img/annie-spratt-beach-running.png");
+    }
+  }
+
+  section.trainers{
+    div.row.position-relative{
+      background-image: url("../img/geert-pieters-group-fitness.jpg");
+    }
+  }
+
 
   div.row.position-relative{
-    background-image: url("../img/annie-spratt-beach-running.png");
     background-position: center ;
     background-size: cover;
     width: 100vw;
     height: 250px;
-  }
-  // div.row img::before{
-  div.row.position-relative::before{
-    content: '';
-    width: 100%;
-    height: 4rem;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    background: inherit;
-    transform: translate(-50%, -50%);
-    filter: blur(5px);
+
+
+    &::before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      filter: blur(5px);
+      background: inherit;
+
+      @media @mb_tablet_up{
+        height: 150px;
+       }
+
+      @media @mb_desktop_up{
+        height: 200px;
+       }
+    }// end ::before for div.row.position-relative
+
+    // media BPs for div.row.position-relative
+    @media @mb_tablet_up{
+      height: 400px;
+      }
+
+    @media @mb_desktop_up{
+      height: 500px;
+     }
+
+     div.sectionTitle{
+      
+      width: 100%;
+      height: 100px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-top: 3px solid @softOrange;
+      border-bottom: 3px solid @softOrange;
+
+      h3{
+        color: #fff;
+        font-size: 30px;
+
+      @media @mb_tablet_up{
+        font-size: 40px;
+        }
+
+      @media @mb_desktop_up{
+        font-size: 55px;
+        }
+      }
+     }
+
   }
 
 } /* end main */
