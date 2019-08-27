@@ -16,11 +16,13 @@ nav.navbar{
 }
 
 footer{
-  background-color: @softOrange;
+  background-color: transparent;
   padding: 1rem;
+  height: 200px;
+
 
   div.d-flex{
-    max-width: 1200px;
+    max-width: 1400px;
   }
 
   nav {
@@ -30,15 +32,15 @@ footer{
       margin-bottom: 0;
 
       span{
-        color: #fff;
+        color: @ironGrey;
         padding: 0 1em;
       }
 
-      li a{
-        color: #fff;
+      li a.footerA{
+        color: @ironGrey;
 
       &:hover{
-        color: @ironGrey;
+        color: @lightAqua;
         text-decoration: none;
       }
 
@@ -48,6 +50,18 @@ footer{
 
       }
     }
+  }// end div.d-flex
+
+  .leftTri{
+    #leftTri(orangered);
+    opacity: 0.5;
+    clip-path: polygon(0 100%, 100% 100%, 0 0);
+  }
+
+  .rightTri{
+    #rightTri(gold);
+    opacity: 0.5;
+    clip-path: polygon(0 100%, 100% 100%, 100% 0);
   }
 } // end footer
 
@@ -114,7 +128,6 @@ header.hero{
   width: 100%;
   height: 100%;
   background-color: @bgc;
-  #bottomToRightTri();
 }
 
 #leftTri(@bgc){
@@ -124,7 +137,6 @@ header.hero{
   width: 100%;
   height: 100%;
   background-color: @bgc;
-  #bottomToLeftTri();
 }
   
 
