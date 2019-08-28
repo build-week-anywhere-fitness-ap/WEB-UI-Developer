@@ -17,12 +17,17 @@ nav.navbar{
 
     li.nav-item {
 
-      &:hover.hoverLine::after , .hoverLine::before{
+      &:hover.hoverLine::after , &:hover.hoverLine::before{
         width: 50%;
       }
 
       a.nav-link.nav-a {
         color: #fff;
+
+        &:hover.hoverLine::after , &:hover.hoverLine::before{
+        width: 45%;
+      }
+
       }
    }
   }
@@ -105,57 +110,45 @@ header.hero{
 /*****************************
   Main
 ******************************/
-main{
-  div.spacer:first-of-type{
-    width: 100%;
-    height: 50px;
-    position: relative;
-    
-    .rightTri{
-      #rightTri(@darkBlue);
-      #bottomToRightTri();
-    }
-
-    .leftTri{
-      #leftTri(@lightAqua);
-      #topToLeftTri();
-      opacity: 0.5;
-    }
-  }
-}
 
 
 /*****************************
   Decorations
 ******************************/
-.hoverLine:after{
+#hoverLine(@bgc){
  content: '';
  width:0px;
- height: 6px;
+ height: 4px;
  position: absolute;
- left:50%;
- bottom: -6px;
- background-color: @lightAqua;
+ left: 50%;
+ bottom: 0;
+ background-color: @bgc;
  transition: all 0.4s;
-//  clip-path: polygon(0 0, 0 100%, 100% 0);
 }
 
-.hoverLine:before{
+.hoverLine::after{
  content: '';
  width:0px;
- height: 6px;
+ height: 4px;
  position: absolute;
- left:50%;
- bottom: -6px;
+ left: 50%;
+ bottom: 0;
  background-color: @lightAqua;
- transform: rotate(180deg); /* make the line grow from right to left*/
+ transition: all 0.4s; 
+}
+
+// #hoverLine(@lightAqua);
+.hoverLine::before{
+ content: '';
+ width:0px;
+ height: 4px;
+ position: absolute;
+ left: 50%;
+ bottom: 0;
+ background-color: @lightAqua;
+ transition: all 0.4s; 
+  transform: rotate(180deg); /* make the line grow from right to left*/
  transform-origin: left;
- transition: all 0.4s;
-//  clip-path: polygon(0 0, 0 100%, 100% 100%);
-}
-
-.one:hover.hoverLine:before, .one:hover.hoverLine:after{
- width: 100px;
 }
 
 #bottomToRightTri(){
