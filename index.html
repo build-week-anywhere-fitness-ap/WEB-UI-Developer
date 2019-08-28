@@ -14,7 +14,7 @@
 <body class="  d-flex flex-column min-vh-100 ">
 
     <!-- Navigation bar -->
-  <nav class="navbar navbar-expand-lg navbar-light  sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light  position-absolute w-100">
     <a class="navbar-brand  d-lg-none" href="#">Anywhere Fitness</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -37,24 +37,29 @@
     <!-- Begin page content -->
 
   <header class="hero">
-    <div class="jumbotron jumbotron-fluid ">
-      <div class="container text-center align-items-center px-5 d-none">
-        <h1 class="display-4">Fitness.</h1>
+    <div class="jumbotron jumbotron-fluid d-flex flex-column align-items-center justify-content-around">
+      <div class="logoDiv pt-5">
+        <img src="./img/af-logo.min.svg" alt="" srcset="">
       </div>
-      </div> <!-- jumbotron -->
 
-      <section class="mobileIntro text-center ">
-        <h3>Train Anywhere.</br>With Anyone.</br>Anytime.</h3>
-        <button class="btn  btn-dark d-block mx-auto">Log In</button>
+      <section class="mobileIntro text-center  mt-3">
+        <div class="d-none d-lg-flex flex-column justify-content-center align-items-center">
+          <p>Train Anywhere.</p>
+          <p>With Anyone.</p>
+          <p>Anytime.</p>
+        </div>
+        <button class="btn  d-block px-4 mx-auto">Log In</button>
       </section>
-
-      <div class="spacer">
-          <div class="leftTri"></div>
-          <div class="rightTri"></div>
-      </div>
+      </div> <!-- jumbotron -->
   </header>
 
-<main role="main" class=" d-flex flex-column align-items-center justify-content-center">
+  
+  <main role="main" class=" d-flex flex-column align-items-center justify-content-center">
+
+  <div class="spacer">
+      <div class="leftTri"></div>
+      <div class="rightTri"></div>
+  </div>
 
   <section class="about container-fluid flex-column  mb-4">
     <div class="row position-relative">
@@ -141,7 +146,7 @@
   <div class="leftTri"></div>
   <div class="rightTri"></div>
   <div class="d-flex flex-column  flex-md-row-reverse align-items-center justify-content-end justify-content-md-between mx-auto h-100 p-md-3">
-   <nav class="footer-nav">
+   <nav class="footer-nav" id="footerNav">
     <ul class="d-flex p-0 position-relative">
       <li><a class="footerA" href="#">Home</a></li>
       <li><span>&#124;</span></li>

@@ -5,53 +5,54 @@
 header.hero{
 
   div.jumbotron.jumbotron-fluid{
-    padding: 70px 0 0 0;
     background-image: url("../img/thought-catalog-women-yoga.jpg");
     transition: padding 1s;
 
-    @media @mb_desktop_up{
-      padding: 500px 0 0 0;
+    div.logoDiv {
+      width: 60%;
+      height: auto; 
     }
 
-    div.container {
-      border: 3px solid @softOrange;
-      width: max-content;
-
-      h1 {
-        color: @darkBlue;
+    @media screen and (orientation: portrait) and (max-width: 575px){
+      div.logoDiv {
+        width: 90%;
       }
     }
+
   } // end jumbotron
 
   section.mobileIntro{
-    position: absolute;
     width: max-content;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 19%;
     border-top: 3px solid @softOrange;
     border-bottom: 3px solid @softOrange;
     padding: 1rem 0 1rem 0;
-  }
 
-  .spacer{
-    #spacer(@softOrange);    
-    height: 56px;
-    bottom: -56px; 
-    left: 0;
-    
-    .rightTri{
-      #rightTri(orangered);
-       opacity: 0.5;
-      #bottomToRightTri();
+    p{
+      font-weight: 500;
+      font-size: 2rem;
     }
 
-    .leftTri{
-      #leftTri(gold);
-       opacity: 0.5;
-      #bottomToLeftTri();
+    button{
+      color: #fff;
+      background-color: @ironGrey;
+      border: 1px solid @ironGrey;
+      transition: color 0.5s  background-color 0.5s; 
+
+      &:hover{
+        color: @ironGrey;
+        background-color: #fff;
+      }
+    }
+
+    @media @mb_tablet_lg_up {
+
+      button {
+        font-size: 1.5rem;
+      }
     }
   }
+
+  
 } /* end header */
 
 main{
@@ -63,8 +64,7 @@ main{
     color: @ironGrey;
   }
 
-
-  section.about{
+ section.about{
     div.row.position-relative{
       background-image: url("../img/inspired-horizons-digital-marketing-beach-yoga.jpg");
     }
