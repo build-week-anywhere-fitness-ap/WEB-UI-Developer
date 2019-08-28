@@ -4,6 +4,9 @@ html , body{
 }
 
 nav.navbar{
+  z-index: 10000;
+  top: 0;
+  left: 0;
   background-color: @softOrange;
   
   ul.navbar-nav.d-flex {
@@ -32,15 +35,15 @@ footer{
         margin-bottom: 0;
 
         span{
-          color: @ironGrey;
+          color: @ironGrey !important;
           padding: 0 1em;
         }
 
         li a.footerA{
-          color: @ironGrey;
+          color: @ironGrey !important;
 
         &:hover{
-          color: @lightAqua;
+          color: @lightAqua !important;
           text-decoration: none;
         }
 
@@ -72,8 +75,6 @@ footer{
 
 header.hero{
   height: 100vh;
-  position: relative;
-  top: -56px;
 
   div.jumbotron.jumbotron-fluid{
     width: 100%;
@@ -86,6 +87,27 @@ header.hero{
     }
   } // end jumbotron
 } // end header.hero
+
+/*****************************
+  Main
+******************************/
+main{
+  div.spacer:first-of-type{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    
+    .rightTri{
+      #rightTri(@darkBlue);
+      #bottomToRightTri();
+    }
+
+    .leftTri{
+      #leftTri(@lightAqua);
+      #topToLeftTri();
+    }
+  }
+}
 
 
 /*****************************
