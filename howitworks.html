@@ -14,7 +14,7 @@
 <body class="  d-flex flex-column min-vh-100 ">
 
     <!-- Navigation bar -->
-  <nav class="navbar navbar-expand-lg navbar-light  sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light  position-absolute w-100">
     <a class="navbar-brand  d-lg-none" href="./index.html">Anywhere Fitness</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -37,18 +37,21 @@
     <!-- Begin page content -->
 
   <header class="hero">
-    <div class="jumbotron jumbotron-fluid d-flex align-items-end">
-      <!-- <div class="d-flex flex-column  align-items-start text-left "> -->
-      <div class="heroText">
-        <h1 class="display-4">Anywhere Fitness</h1>
+    <div class="jumbotron jumbotron-fluid position-relative">
+      <div class="heroText position-absolute">
+        <h1 class="">Anywhere Fitness</h1>
         <p>An app that empowers people to determine where, when, and with whom they train.</p>
       </div>
     </div> <!-- jumbotron -->
 
-    <div class="spacer"></div>
   </header>
 
   <main role="main" class=" d-flex flex-column align-items-center justify-content-center">
+
+    <div class="spacer">
+      <div class="leftTri"></div>
+      <div class="rightTri"></div>
+    </div>
 
     <section class="forClients container-fluid px-0">
       <div class="spacer text-center pt-2">
@@ -113,11 +116,11 @@
   <div class="d-flex flex-column  flex-md-row-reverse align-items-center justify-content-end justify-content-md-between mx-auto h-100 p-md-3">
    <nav class="footer-nav">
     <ul class="d-flex p-0 position-relative">
-      <li><a class="footerA" href="#">Home</a></li>
+      <li><a class="footerA" href="./index.html">Home</a></li>
       <li><span>&#124;</span></li>      
       <li><a class="footerA" href="#">How it Works</a></li>
       <li><span>&#124;</span></li>      
-      <li><a class="footerA" href="#">Pricing</a></li>
+      <li><a class="footerA" href="./pricing.html">Pricing</a></li>
     </ul>
    </nav> 
     <span class="position-relative">Copyright &#169; 2019 Anywhere Fitness</span>
