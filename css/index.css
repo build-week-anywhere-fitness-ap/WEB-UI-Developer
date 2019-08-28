@@ -281,7 +281,7 @@ main.d-flex.align-items-center.justify-content-center .section2 {
   padding-right: 5%;
   justify-content: space-between;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 600px) {
   main.d-flex.align-items-center.justify-content-center .section2 {
     display: flex;
     flex-wrap: wrap;

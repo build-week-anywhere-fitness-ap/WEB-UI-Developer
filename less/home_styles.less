@@ -62,24 +62,101 @@ main{
   }
   p{
     color: @ironGrey;
+    font-size: 1.25rem;
+
+
+    @media @mb_tablet_up{
+    font-size: 1.5rem;
+    }
   }
+  
+  
 
  section.about{
     div.row.position-relative{
       background-image: url("../img/inspired-horizons-digital-marketing-beach-yoga.jpg");
     }
-  }
+
+    div.card{
+      height: 500px;
+      width: 270px;
+      border: 1px solid @softOrange;
+      
+      div.rounded-circle{
+        color: #fff;
+        background-color: @darkBlue;
+
+        i{
+          font-size: 8rem;
+        }
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    @media @mb_tablet_up{
+
+      div.card{
+      }
+    }
+
+    @media @mb_tablet_lg_up{
+      div.card{
+      }
+    }
+  } //end section.about
 
   section.clients{
     div.row.position-relative{
       background-image: url("../img/annie-spratt-beach-running.png");
     }
-  }
+  } // end section.clients
 
   section.trainers{
     div.row.position-relative{
       background-image: url("../img/geert-pieters-group-fitness.jpg");
     }
+  } // end section.trainers
+
+    section.reviews{
+
+    div.spacer{
+      
+      #spacer( relative ; transparent);
+      height: max-content;
+      color: @darkBlue;
+      width: 80%;
+      padding-bottom: 1rem;
+
+      .rightTri{
+        #rightTri(orangered);
+        opacity: 0.5;
+        #bottomToRightTri();
+      }
+
+      .leftTri{
+        #leftTri(gold);
+        opacity: 0.5;
+        #bottomToLeftTri();
+      }
+
+      h2{
+        font-size: 30px;
+      }
+
+      @media @mb_tablet_up{
+        width: 75%;
+        h2{ font-size: 40px;}
+        }
+
+      @media @mb_desktop_up{
+        width: 70%;
+        h2{ font-size: 55px;}
+        }
+    }
+    
   }
 
 

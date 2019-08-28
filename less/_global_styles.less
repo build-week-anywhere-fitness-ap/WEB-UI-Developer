@@ -3,6 +3,9 @@ html , body{
   overflow-x: hidden;
 }
 
+/*****************************
+  Header Nav Bar
+******************************/
 nav.navbar{
   z-index: 10000;
   top: 0;
@@ -12,12 +15,23 @@ nav.navbar{
   ul.navbar-nav.d-flex {
     justify-content: space-evenly;
 
-    li.nav-item a.nav-link.nav-a {
-      color: #fff;
-    }
+    li.nav-item {
+
+      &:hover.hoverLine::after , .hoverLine::before{
+        width: 50%;
+      }
+
+      a.nav-link.nav-a {
+        color: #fff;
+      }
+   }
   }
+
 }
 
+/*****************************
+  Footer
+******************************/
 footer{
   background-color: transparent;
   padding: 1rem;
@@ -114,6 +128,35 @@ main{
 /*****************************
   Decorations
 ******************************/
+.hoverLine:after{
+ content: '';
+ width:0px;
+ height: 6px;
+ position: absolute;
+ left:50%;
+ bottom: -6px;
+ background-color: @lightAqua;
+ transition: all 0.4s;
+//  clip-path: polygon(0 0, 0 100%, 100% 0);
+}
+
+.hoverLine:before{
+ content: '';
+ width:0px;
+ height: 6px;
+ position: absolute;
+ left:50%;
+ bottom: -6px;
+ background-color: @lightAqua;
+ transform: rotate(180deg); /* make the line grow from right to left*/
+ transform-origin: left;
+ transition: all 0.4s;
+//  clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+.one:hover.hoverLine:before, .one:hover.hoverLine:after{
+ width: 100px;
+}
 
 #bottomToRightTri(){
   clip-path: polygon(0 50% , 0% 100%, 100% 100%);
@@ -139,8 +182,8 @@ main{
   clip-path: polygon(50% 0, 50% 60%, 100% 0);
 }
 
- #spacer(@bgc){
-    position: absolute;
+ #spacer(@pos: absolute ; @bgc){
+    position: @pos;
     width: 100%;
     background-color: @bgc;
  }    
