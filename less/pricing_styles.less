@@ -33,7 +33,10 @@ main.d-flex.align-items-center.justify-content-center {
         padding-right: 5%;
         justify-content: space-between;
         
-        
+        @media @mb_phone_only {
+
+            flex-wrap: wrap;
+        }
 
         .pricing-box {
             display: flex;
@@ -41,6 +44,12 @@ main.d-flex.align-items-center.justify-content-center {
             align-content: space-around;
             width: 15%;
 
+
+            @media @mb_phone_only {
+
+                width: 50%;
+                height: 300px;
+            }
         }
     }
 
