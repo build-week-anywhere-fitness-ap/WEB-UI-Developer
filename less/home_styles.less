@@ -10,13 +10,12 @@ header.hero{
 
     div.logoDiv {
       width: 60%;
-      max-width: 60%;
       height: auto; 
     }
 
-    @media @mb_tablet_lg_up{
+    @media screen and (orientation: portrait) and (max-width: 575px){
       div.logoDiv {
-      max-width: 60%;
+        width: 90%;
       }
     }
 
@@ -30,7 +29,26 @@ header.hero{
 
     p{
       font-weight: 500;
-      font-size: 1rem;
+      font-size: 2rem;
+    }
+
+    button{
+      color: #fff;
+      background-color: @ironGrey;
+      border: 1px solid @ironGrey;
+      transition: color 0.5s  background-color 0.5s; 
+
+      &:hover{
+        color: @ironGrey;
+        background-color: #fff;
+      }
+    }
+
+    @media @mb_tablet_lg_up {
+
+      button {
+        font-size: 1.5rem;
+      }
     }
   }
 
