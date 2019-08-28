@@ -1,0 +1,162 @@
+// out: ../css/howitworks_styles.css
+@import "./_variables.less";
+@import "./_global_styles.less";
+
+header.hero{
+
+  div.jumbotron.jumbotron-fluid{
+    background-image: url("../img/victor-freitas-fist-bump.jpg");
+    background-position-x: 60%;
+
+    div.d-flex{
+      padding: 0 1rem;
+      top: 65%;
+      width: 100%;
+      max-width: 420px;
+      color: #fff;
+      transition: all 1s;
+
+
+      p{
+        font-size: 1.25rem;
+      }
+
+      @media @mb_tablet_up{
+        top: 73%;
+        margin: 0 2rem;
+        p{
+          font-size: 1.75rem;
+        }
+      }
+
+      @media @mb_desktop_up{
+        margin: 0 3rem;
+        max-width: 500px;
+
+        p{
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  .spacer{
+    #spacer(@softOrange);
+    height: 56px;
+    bottom: -56px; 
+    left: 0;
+  }
+} // end header.hero
+
+main{
+
+  h3{
+    color: @darkBlue;
+  }
+
+  section{
+
+    div.spacer{
+      #spacer(@softOrange);
+      position: relative;
+      height: 4rem;
+      color: #fff;
+
+      .rightTri{
+        #rightTri(orangered);
+        opacity: 0.5;
+        #bottomToRightTri();
+      }
+
+      .leftTri{
+        #leftTri(gold);
+        opacity: 0.5;
+        #bottomToLeftTri();
+      }
+    }
+    
+    div.row.blurb{
+
+        .accentTriangle{
+          width: 100%;
+          height: 100%;;
+          background-color: @lightAqua;
+          opacity: 0.5;
+          z-index: -1;
+        }
+
+
+        img{
+          width:100%;
+          height: auto;
+        }
+      
+    } // end div.row.blurb 
+    @media @mb_tablet_lg_up{
+      .blurb{
+        font-size: 1.25rem;
+      }
+    }
+
+    @media @mb_tablet_lg_up{
+      .blurb{
+        font-size: 1.5rem;
+
+        .blurbText{
+          max-width: 47%;
+        }
+        .imgWrap {
+          max-width: 47%;
+        }
+        }
+      }
+    
+    @media @mb_desktop_up{
+      .blurb{
+
+        .blurbText{
+          max-width: 45%;
+        }
+        .imgWrap {
+          max-width: 45%;
+        }
+        }
+
+    }
+  }// end section
+
+  section.forClients{
+
+    .imgWrap{
+      filter: drop-shadow(5px 5px rgba(0,0,0,0.3));
+    }  
+
+    .accentTriangle{
+      bottom: -40%;
+      right:-50%; 
+      #accentTri1();
+    }
+
+    img{
+      clip-path: polygon(100% 0, 100% 66%, 0 100%, 0 0);
+    }
+
+  } // end section.forClients
+
+   section.forTrainers{
+
+     .imgWrap{
+        filter: drop-shadow( -5px 5px rgba(0,0,0,0.3));
+     }
+
+      .accentTriangle{
+        left: -50%;
+        bottom: -40%;
+        #accentTri2();
+      }
+
+      img{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 66%);
+      }
+   }
+}// end main
