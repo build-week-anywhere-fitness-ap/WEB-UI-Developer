@@ -2,23 +2,15 @@
 @import "./_variables.less";
 @import "./_global_styles.less";
 
-header{
-  height: 100vh;
-  position: relative;
-  top: -56px;
+header.hero{
 
   div.jumbotron.jumbotron-fluid{
-    width: 100%;
-    height: 100%;
     padding: 70px 0 0 0;
     background-image: url("../img/thought-catalog-women-yoga.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     transition: padding 1s;
 
     @media @mb_desktop_up{
-      padding: 540px 0 0 0;
+      padding: 500px 0 0 0;
     }
 
     div.container {
@@ -41,6 +33,25 @@ header{
     border-bottom: 3px solid @softOrange;
     padding: 1rem 0 1rem 0;
   }
+
+  .spacer{
+    #spacer(@softOrange);    
+    height: 56px;
+    bottom: -56px; 
+    left: 0;
+    
+    .rightTri{
+      #rightTri(orangered);
+       opacity: 0.5;
+      #bottomToRightTri();
+    }
+
+    .leftTri{
+      #leftTri(gold);
+       opacity: 0.5;
+      #bottomToLeftTri();
+    }
+  }
 } /* end header */
 
 main{
@@ -51,6 +62,7 @@ main{
   p{
     color: @ironGrey;
   }
+
 
   section.about{
     div.row.position-relative{
@@ -132,7 +144,41 @@ main{
         h3{ font-size: 55px;}
         }
      }
+  } // end div.row.position-relative
 
+  section.reviews{
+
+
+
+    /*****************************
+    Carousel
+    ******************************/
+    .carousel-inner{
+      background-color: @darkBlue;
+      background: linear-gradient(135deg, @darkBlue 0%, @darkBlue 25%, @lightAqua 40%, @lightAqua 50%, @darkBlue, @darkBlue 100%);
+      height: 420px;
+    }
+    .carousel-item{
+      height: 100%;;
+
+      img{
+        clip-path: circle( 50% at 50% 50%);
+        width: 250px;
+        height: auto;
+        position: relative;
+        top: 0;
+        left:50%;
+        transform: translateX(-50%);
+      }
+
+      div.carousel-caption{
+        bottom: 0;
+        padding-bottom: 35px;
+        p{
+          color: #fff;
+        }
+      }
+    }// end .carousel-item
   }
 
 } /* end main */
