@@ -33,9 +33,21 @@ main.d-flex.align-items-center.justify-content-center {
         padding-right: 5%;
         justify-content: space-between;
         
-        @media @mb_phone_only {
+        @media @mobile {
 
+            display: flex;
             flex-wrap: wrap;
+            flex-direction: column;
+
+            padding-top: 1%;
+            padding-left: 5%;
+            padding-right: 5%;
+            width: 90vh;
+            margin: auto;
+        }
+
+        @media @tablet {
+
         }
 
         .pricing-box {

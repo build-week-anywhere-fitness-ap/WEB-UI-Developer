@@ -1,5 +1,5 @@
 
-body{
+html , body{
   overflow-x: hidden;
 }
 
@@ -23,34 +23,35 @@ footer{
 
   div.d-flex{
     max-width: 1400px;
-  }
+  
 
-  nav {
+    nav {
 
-    ul{
-      list-style: none;
-      margin-bottom: 0;
+      ul{
+        list-style: none;
+        margin-bottom: 0;
 
-      span{
-        color: @ironGrey;
-        padding: 0 1em;
+        span{
+          color: @ironGrey;
+          padding: 0 1em;
+        }
+
+        li a.footerA{
+          color: @ironGrey;
+
+        &:hover{
+          color: @lightAqua;
+          text-decoration: none;
+        }
+
+        &:visited{
+          color: #fff;
+        }
+
+        }
       }
-
-      li a.footerA{
-        color: @ironGrey;
-
-      &:hover{
-        color: @lightAqua;
-        text-decoration: none;
-      }
-
-      &:visited{
-        color: #fff;
-      }
-
-      }
-    }
-  }// end div.d-flex
+    }// end div.d-flex
+  }// end footer
 
   .leftTri{
     #leftTri(orangered);
