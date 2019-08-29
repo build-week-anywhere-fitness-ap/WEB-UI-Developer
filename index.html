@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="./css/home_styles.css">
   <!-- font awesome icons -->
   <script src="https://kit.fontawesome.com/07502ec00e.js"></script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script defer src="./js/animations.js"></script>
   <title>Anywhere Fitness</title>
 </head>
 <body class="  d-flex flex-column min-vh-100 ">
@@ -22,15 +25,15 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav text-center d-flex w-100 ">
+      <ul class="navbar-nav text-center d-flex w-100 align-items-center">
         <li class="nav-item d-block">
-          <a class="nav-link nav-a" href="./howitworks.html">How it Works</a>
+          <a class="nav-link nav-a hoverLine position-relative" href="./howitworks.html">How it Works</a>
         </li>
         <li class="nav-item d-none d-lg-block">
     <a class="navbar-brand" href="./index.html">Anywhere Fitness</a>
         </li>
-        <li class="nav-item d-block ">
-          <a class="nav-link nav-a" href="./pricing.html">Pricing</a>
+        <li class="nav-item d-block  ">
+          <a class="nav-link nav-a hoverLine position-relative" href="./pricing.html">Pricing</a>
         </li>
       </ul>
     </div>
@@ -39,18 +42,18 @@
     <!-- Begin page content -->
 
   <header class="hero">
-    <div class="jumbotron jumbotron-fluid d-flex flex-column align-items-center justify-content-around">
-      <div class="logoDiv pt-5">
+    <div class="jumbotron jumbotron-fluid d-flex flex-column align-items-center ">
+      <div class="logoDiv  ">
         <img src="./img/af-logo.min.svg" alt="" srcset="">
       </div>
 
-      <section class="mobileIntro text-center  mt-3">
-        <div class="d-none d-lg-flex flex-column justify-content-center align-items-center">
+      <section class="mobileIntro text-center ">
+        <div class=" d-flex flex-column justify-content-center align-items-center mt-3">
           <p>Train Anywhere.</p>
           <p>With Anyone.</p>
-          <p>Anytime.</p>
+          <p class="mb-0">Anytime.</p>
         </div>
-        <button class="btn  d-block px-4 mx-auto">Log In</button>
+        <button class="btn  d-block px-4 my-3 mx-auto">Log In</button>
       </section>
       </div> <!-- jumbotron -->
   </header>
@@ -58,7 +61,7 @@
   
   <main role="main" class=" d-flex flex-column align-items-center justify-content-center">
 
-  <div class="spacer">
+  <div class=" indexSpacer">
       <div class="leftTri"></div>
       <div class="rightTri"></div>
   </div>
