@@ -1,1 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 55.404 22.973"><defs><linearGradient id="b"><stop offset="0" stop-color="#ec9119"/><stop offset="1" stop-color="#ec9119" stop-opacity="0"/></linearGradient><linearGradient id="a"><stop offset="0" stop-color="#ec9119"/><stop offset="1" stop-color="#ec9119" stop-opacity="0"/></linearGradient><linearGradient xlink:href="#a" id="d" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-3.7968 0 0 -1.69166 619.682 208.357)" x1="107.927" y1="96.396" x2="163.344" y2="96.396"/><linearGradient xlink:href="#b" id="c" x1="0" y1="43.414" x2="178.941" y2="43.414" gradientUnits="userSpaceOnUse"/></defs><path d="M0 0v86.828l178.941-43.414z" transform="scale(.26458)" fill="url(#c)"/><path d="M49.402 0l160 40.027V1zM209.402 47.8l-160 39.028h160z" transform="scale(.26458)" fill="url(#d)"/><text style="line-height:1.25;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" x="108.6" y="108.432" font-weight="700" font-size="9.001" font-family="sans-serif" letter-spacing="0" word-spacing="0" stroke-width=".225" transform="translate(-105.992 -99.554)"><tspan x="108.6" y="108.432" style="-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start">Anywhere</tspan></text><text style="line-height:1.25;-inkscape-font-specification:'sans-serif, Italic';text-align:start;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal" x="122.412" y="119.911" font-style="italic" font-weight="400" font-size="10.583" font-family="sans-serif" letter-spacing="0" word-spacing="0" stroke-width=".265" writing-mode="lr" transform="translate(-105.992 -99.554)"><tspan x="122.412" y="119.911" style="-inkscape-font-specification:'sans-serif, Italic';text-align:start;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal">Fitness</tspan></text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 55.404 22.973">
+<defs>
+<linearGradient id="b">
+  <stop offset="0" stop-color="#ec9119"/>
+  <stop offset="1" stop-color="#ec9119" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="a">
+  <stop offset="0" stop-color="#ec9119"/>
+  <stop offset="1" stop-color="#ec9119" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient xlink:href="#a" id="d" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-3.7968 0 0 -1.69166 619.682 208.357)" x1="107.927" y1="96.396" x2="163.344" y2="96.396"/>
+  <linearGradient xlink:href="#b" id="c" x1="0" y1="43.414" x2="178.941" y2="43.414" gradientUnits="userSpaceOnUse"/>
+  </defs>
+  <path d="M0 0v86.828l178.941-43.414z" transform="scale(.26458)" fill="url(#c)"/>
+  <path d="M49.402 0l160 40.027V1zM209.402 47.8l-160 39.028h160z" transform="scale(.26458)" fill="url(#d)"/>
+  <g id="svgAnywhere">
+  <text style="line-height:1.25;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" x="108.6" y="108.432" font-weight="700" font-size="9.001" font-family="sans-serif" letter-spacing="0" word-spacing="0" stroke-width=".225" transform="translate(-105.992 -99.554)">
+  <tspan x="108.6" y="108.432" style="-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start">Anywhere</tspan>
+  </text>
+  </g>
+  <g id="svgFitness">
+  <text style="line-height:1.25;-inkscape-font-specification:'sans-serif, Italic';text-align:start;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal" x="122.412" y="119.911" font-style="italic" font-weight="400" font-size="10.583" font-family="sans-serif" letter-spacing="0" word-spacing="0" stroke-width=".265" writing-mode="lr" transform="translate(-105.992 -99.554)">
+  <tspan x="122.412" y="119.911" style="-inkscape-font-specification:'sans-serif, Italic';text-align:start;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal">Fitness</tspan>
+  </text>
+  </g>
+</svg>

@@ -9,6 +9,7 @@ header.hero{
     transition: padding 1s;
 
     div.logoDiv {
+      padding-top: 3rem;
       width: 60%;
       height: auto; 
     }
@@ -19,24 +20,48 @@ header.hero{
       }
     }
 
+    @media screen and (orientation: landscape ) and (max-height: 500px){
+      div.logoDiv {
+        padding-top: 1.5rem;
+      }
+    }
+
   } // end jumbotron
 
   section.mobileIntro{
-    width: max-content;
+    margin-top: 2rem;
+    height: 6px;
+    width: 0;
+    max-width: max-content;
+    max-height: 280px;
     border-top: 3px solid @softOrange;
     border-bottom: 3px solid @softOrange;
-    padding: 1rem 0 1rem 0;
 
-    p{
-      font-weight: 500;
-      font-size: 2rem;
-    }
+    div {
+      transform: scale(0);
+      opacity: 0;
+      p{
+        font-weight: 500;
+        font-size: 2rem;
+      }
+
+      @media screen and ( max-height: 570px){
+        height: 0 !important;
+        margin-top: 0 !important;
+        p{
+          height: 0 !important;
+          font-size: 0 !important;
+        }
+      }
+    } //end div inside section.mobileIntro
 
     button{
       color: #fff;
       background-color: @ironGrey;
       border: 1px solid @ironGrey;
+      opacity: 0;
       transition: color 0.5s  background-color 0.5s; 
+      transform: scale(0);
 
       &:hover{
         color: @ironGrey;
@@ -50,8 +75,30 @@ header.hero{
         font-size: 1.5rem;
       }
     }
-  }
 
+    @media screen and ( orientation : portrait) and ( max-width: 575px){
+      margin-top: 100px;
+    }
+
+    @media screen and ( orientation : portrait) and ( min-width: 576px){
+      margin-top: 240px;
+    }
+
+
+    // @media screen and ( orientation : landscape) and ( max-height: 575px){
+    //   margin-top: 1rem;
+    // }
+
+    // @media screen and ( orientation : landscape) and ( min-height: 576px) and ( max-width: 1199px){
+    //   margin-top: 90px;
+    // }
+
+    // @media screen and ( min-width: 1200px){
+    //   margin-top: 150px;
+    // }
+
+
+  } //end mobile intro
   
 } /* end header */
 
