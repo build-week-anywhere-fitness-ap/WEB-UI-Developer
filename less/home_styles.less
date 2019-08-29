@@ -8,8 +8,12 @@ header.hero{
     background-image: url("../img/thought-catalog-women-yoga.jpg");
     transition: padding 1s;
 
+        @media screen and (orientation: landscape) and (max-height: 575px){
+        padding-top: 0 !important;
+      }
+
     div.logoDiv {
-      padding-top: 3rem;
+      // padding-top: 3rem;
       width: 60%;
       height: auto; 
     }
